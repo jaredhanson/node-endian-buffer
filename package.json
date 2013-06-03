@@ -1,0 +1,33 @@
+{
+  "name": "endian-buffer",
+  "version": "0.1.0",
+  "description": "An endian-aware wrapper for Node.js Buffer.",
+  "keywords": ["buffer", "endian"],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jaredhanson/node-endian-buffer.git"
+  },
+  "bugs": {
+    "url": "http://github.com/jaredhanson/node-endian-buffer/issues"
+  },
+  "author": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "url": "http://www.jaredhanson.net/"
+  },
+  "licenses": [ {
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/MIT" 
+  } ],
+  "main": "./lib",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "1.x.x",
+    "chai": "1.x.x"
+  },
+  "scripts": {
+    "test": "NODE_PATH=./lib node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
+  },
+  "engines": { "node": ">= 0.4.0" }
+}
